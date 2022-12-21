@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+@import 'config';
+@import 'nav';
+@import 'buttons';
+@import 'map';
+@import 'form';
+@import 'mobile';
+
+body, html {
+  display: block;
+  height: 100%;
+  background-color: $backgroundColor;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-family: $fontStack;
+  color: $cardColor;
+  font-size: 3.8rem;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+} 
+
+h3 {
+  font-family: $fontStack;
+  color: $textColor;
+  font-size: 2.6rem;
+  font-weight: 600;
+} 
+
+/* inset box's h3 */
+.red-h3 {
+  color: $textColor;
+}
+
+
+.hero-banner {
+  display: block;
+  // height needs to activate, was inline!
+  height: 40%;
+  width: 100%;
+  background-image: linear-gradient(rgba(221, 221, 221, 0.411), rgba(177, 177, 177, 0.507)), url("../network-3664108_1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  border-bottom: 1px solid $borderColor;
+  border-top: 1px solid $borderColor;
+
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;   /* old was relative! */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $textColor;
+  // changed to vw from px
+  font-size: 5vw;
+  font-weight: 600;
+}
+
+/* styled sub h2 */
+.h2-hero-text {
+  text-align: center;
+  position: absolute;   /* old was relative! */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $textColor;
+  font-size: 58px;
+  
+  font-weight: 600;
+}
+
+.lower-banner-box {
+  text-align: center;
+  position: relative;
+  top: 50%;  
+  font-size: 1.5em;
+  font-weight: 600;
+  color: $textColor;
+  /* border: 2px solid black;  Comment out */
+}
+
+.image {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 80%;
+  width: 80%;
+  justify-content: center;
+}
+
+
+/* BOX CONTAINING BOX'S */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+    text-align: left;
+    padding-left: 13%;
+    padding-right: 13%;
+    justify-content: center;
+}
+
+/* FIRST FLEX BOXS */
+.flex-item-left {
+    background-color: $cardColor;
+    padding: 15px; 
+    flex: 50%;
+    border: 1px solid $borderColor;
+    margin-right: 32px;  /*  reset to 0 for mobile  */
+}
+
+.flex-item-right {
+    background-color: $cardColor;
+    padding:15px; 
+    flex: 50%;
+    border: 1px solid $borderColor;
+    margin-left: 32px;  /*  reset to 0 for mobile  */
+}
+
+/* SECOND FLEX BOXS */
+.flex-item-left2 {
+    background-color: $cardColor;
+    padding: 15px; 
+    flex: 50%;
+    border: 1px solid $h2New;
+    border-bottom: 4px solid #ff0019;
+    /* border-style: outset; */
+    text-align: center;
+    margin-right: 100px;  /*  reset to 0 for mobile  */
+}
+
+.flex-item-right2 {
+    background-color: $cardColor;
+    padding:15px; 
+    flex: 50%;    
+    border: 1px solid $h2New;
+    border-bottom: 4px solid #ff0019;
+    /* border-style: outset; */
+    margin-left: 100px;  /*  reset to 0 for mobile  */
+    text-align: center;
+}
+
+.icon-in-flex {
+    width: 55px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  color: $cardColor;
+  position: relative;
+  justify-content: center;
+}
+
+.footer div {
+  padding: 10px;
+  text-align: center;
+}
+.footer a {
+  color: $cardColor;
+  padding: 10px;
+}
+.footer a:hover {
+  color: $buttonBorderColor;
+}
+
+.image {
+  padding: 0px;
+  height: 70%;
+  width: 70%;  
+}
+
+i {
+  color: $maroon;
+  font-size: large;
+  font-weight: 600;
+}
+
+p {
+  font-weight: 500;
+
+}
+
+

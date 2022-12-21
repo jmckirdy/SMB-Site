@@ -1,0 +1,48 @@
+/* NEW BUTTON FILE */
+
+.buttonNew {
+    display: inline-block;
+    transition-duration: 0.4s;
+    border: 1px solid $buttonBorderColor;
+    font-size: large;
+    /* font-weight:300; */
+    font-weight:600;
+
+
+    margin: 16px 16px 16px 0px;
+    text-decoration: none;
+    padding: 8px;
+    color: $buttonBorderColor;
+    background-color: #ff0019;
+    text-align: center;
+    cursor: pointer;
+}
+  
+.buttonNew:hover {
+    background-color: #450609;
+    border: 1px solid #999;
+}
+
+
+input[type=submit] {
+  background-color: red;
+  border: 1px solid $buttonBorderColor;
+  color: $buttonBorderColor;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+
+  font-size: large;
+  /* font-weight:300; */
+  font-weight:600;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #450609;
+  border: 1px solid #999;
+  transition-duration: 0.4s;
+}
+
+

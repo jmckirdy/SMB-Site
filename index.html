@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armatus | Armoured Transport</title>
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- JQUERY CDN & HAMBURGER CLICK FUNCTION -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        $(function() {
+            $(".toggle").on("click", function(){
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active");
+                }
+                else{
+                    $(".item").addClass("active");
+                }
+            })          
+        });
+
+    </script>
+
+</head>
+<body>
+    
+    <!-- nav goes here -->
+    <nav class="header" id="myHeader">
+        <ul class="menu">
+            <!-- <li class="logo"><a href="#logo">
+                <img class="logo-img" src="Logo/Raster/PNG/Armatus_Logo1.png" alt="logo">
+            </a></li> -->
+
+            <li class="logo"><a href="#logo">Armatus</a></li>
+
+            <li class="item button secondary"><a href="#about">About</a></li>
+            <li class="item button secondary"><a href="#services">Services</a></li>
+            <li class="item button secondary"><a href="#industries">Industries</a></li>
+            <li class="item button"><a href="#contact">Contact</a></li>
+            <li class="toggle"><a href="#"><span class="bars"></span></a></li>
+        </ul>
+    </nav>
+
+
+    <!-- main page content begins with blurred bg-banner and transparent container, full page width -->
+    <div class="hero-banner">
+        <h1 class="hero-text">A Rather Long Biz Name LTD</h1>  
+    </div>
+
+    <!-- Ideally have the text boxes overlap the blurred banner slightly -->
+    <br><br>
+                
+
+
+
+    
+    <br id="about">
+
+    <!-- 'VALUES, ABOUT US' STARTS / FLEX-CONTAINER 1 -->
+    <div class="flex-container">
+
+        <div class="flex-item-left">
+            <h3>Our Values</h3>
+            <br>
+            
+            <p>
+                Lorem ipsum dolor sit amet consectetur adip that make <i>A Rather Long Biz Name LTD</i> iste adipisci impedit placeat soluta vitae.
+                Ipsum error ducimus odit distinctio omnis et possimus!
+            </p>
+            
+        </div>
+
+        <div class="flex-item-right">
+            <h3>Who We Are</h3>
+            <br>
+            
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maxime unde cum iusto,
+                velit distinctio iste expedita molestiae assumenda. Ipsum nam del <i>some more italics</i> in Canada.
+            </p>
+            <br>
+
+
+            <a href="#contact">
+            <button class="buttonNew">Talk To An Expert Now</button>
+            </a>
+
+        </div>
+    </div>
+
+
+    <!-- TRUCK PIC STARTS -->
+    <div class="flex-container">
+
+        <img class="image" src="truck-blue.png" alt="armored truck">
+
+    </div>
+
+
+
+    <!-- BACKGROUND HERO BANNER 2 STARTS -->
+    <div class="hero-banner" style="height: 40%;">
+        <div class="lower-banner-box">
+            <h2 class="h2-hero-text" style="top: -45%;">Request a Quote</h2> 
+            <p style="font-weight: 600;">Consequatur, labore, incidunt commodi voluptatum  atque ratione alias.</p> 
+            
+            <a href="#contact">
+                <button class="buttonNew">Request a quote</button>
+            </a>
+
+        </div>
+    </div>
+
+    
+    
+    <br><br>
+
+    
+    
+
+    <!-- TITLE -->
+    <br id="services">
+    <h2>Services</h2>
+    <br>
+
+
+    <!-- SERVICES BOX'S START / FLEX-CONTAINER 2 -->
+    <div class="flex-container">
+
+        <div class="flex-item-left2">
+            <img src="banknotes-128.png" class="icon-in-flex">
+            <h3 class="red-h3">T.G.I.F</h3>
+            <br>
+            
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing <i>Thank God Its Friday</i>.
+                Suscipit maxime unde cum iusto, velit distinctio iste expedita molestiae. 
+            </p>
+        </div>
+
+        <div class="flex-item-right2">
+            <img src="truck-128.png" class="icon-in-flex">
+            <h3 class="red-h3">Secure Websites</h3>
+            <br>
+                
+    
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maxime 
+                unde cum iusto, velit distinctio iste expedita molestiae assumenda. Ipsum nam dolore sit, 
+                veniam totam inventore! Nobis vel necessitatibus optioexpedita molestiae assumenda?
+            </p>
+            <br>
+
+        </div>
+    </div>
+
+
+    <br><br>
+
+
+    <br id="industries">
+
+
+    <!-- TITLE -->
+    <h2>Industries</h2>
+
+    <br>
+
+    <!-- INDUSTRIES BOX'S START / FLEX-CONTAINER 2b -->
+    <div class="flex-container">
+
+        <div class="flex-item-left2">
+            <img src="home-5-128.png" class="icon-in-flex">
+            <h3 class="red-h3">Retail</h3>
+            <br>
+            
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit maxima.
+            </p>
+        </div>
+
+        <div class="flex-item-right2">
+            <img src="organization-128.png" class="icon-in-flex">
+            <h3 class="red-h3">Commercial</h3>
+            <br>
+            
+            <p>
+                veniam totam inventore! Nobis vel necessitatibus optioexpedita molestiae assumenda? <i>business services</i> day or night. 
+                Additionally we offer <i>more services</i> at necessitatibus optioexpedita assumenda.
+            </p>
+            <br>
+
+        </div>
+    </div>
+
+    <BR><BR>
+
+
+    <!-- TITLE -->
+    <h2>Map</h2>
+    <br>
+
+    <!-- if map is not visible: check the visibility attrib within the iframe -->
+    <div class="map-box">
+        <iframe width="100%" height="490" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=100%&amp;height=490&amp;hl=en&amp;q=%20Kamloops+(Armatus)&amp;t=&amp;z=7&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" style="visibility: visible;"></iframe> <a href='https://www.embedmap.net/'>embed google map on website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=d53d81f2148aa7420cdfd88f474951ed1055a4e6'></script>
+    </div>
+    
+
+
+    <br id="contact">
+
+
+    <!-- FORM STARTS -->
+    <div class="my-form">
+
+        <!-- TITLE -->
+        <br>
+        <h2>Contact Us</h2>
+
+        <form action="/action_page.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" placeholder="John"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Doe"><br><br>
+
+            <label for="message">Message</label>
+            <input type="text" id="message" name="message" placeholder="Message"><br><br>
+
+            <label for="email">Email:</label>
+            <input id="email" name="email" placeholder="Email"><br><br>
+
+            <input type="submit" value="Submit">
+
+            <br><br>
+        </form> 
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+
+        <p>
+            Copyright © 2023 &nbsp;|&nbsp; A Rather Large Biz Name LTD &nbsp;|&nbsp; All Rights Reserved.
+        </p>
+
+        <div>
+            <a href="tos.html" rel="terms of service" target="_blank">Terms of Service</a>
+            <a href="pp.html" rel="privacy policy" target="_blank">Privacy Policy</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

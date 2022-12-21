@@ -1,0 +1,57 @@
+// Tablets --
+// iPad mini: 768, iPad air: 820, 
+
+// Mobiles --
+// 468 is above most phones so consider this the max
+
+// Mobile queries
+@media (max-width: 468px) {
+  .hero-banner .hero-text {
+    font-size: 36px;
+  }
+
+  .flex-container .image {
+    visibility: hidden;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+
+    .flex-item-left, .flex-item-right, .flex-item-left2, .flex-item-right2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 5px 0px;
+      align-items: center;
+    }
+  }
+
+  .button a {
+    color: $h2New;
+  }
+  .button.secondary a {
+    color: $h2New;
+  } 
+}
+
+// Tablet queries used 900 to be well over the limit
+@media (max-width: 900px) {
+  .flex-container .flex-item-left2 {
+    margin-right: 1px;
+  }
+  .flex-container .flex-item-right2 {
+    margin-left: 1px;
+  }
+
+  // h2 is not being activated for some reason
+  // h2 {
+  //   font-size: 12px;
+  //   color: aquamarine;
+  // }
+
+
+
+}
+

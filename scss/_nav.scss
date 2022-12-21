@@ -1,0 +1,223 @@
+/* Basic styling */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  background: $backgroundColor;
+  padding: 0px 20px;
+  border-bottom: 1px solid $borderColor;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: $textColor;
+  text-decoration: none;
+}
+
+// TRYING TO CHANGE COLOR OF TEXT IN NAV, WHEN :ACTIVE
+// a:active {
+//   color: $cardColor;
+// }
+
+a:hover {
+  color: $buttonBorderColor;
+}
+
+/* added sizing for logo */
+// .logo-img {
+//   width: 75px;
+//   height: 75px;
+//   margin: -10px 0px -16px 0px;
+//   background-size:cover;
+// }
+
+.logo a:hover {
+  text-decoration: none;
+}
+
+.menu li {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+
+// Armatus 'Logo or Name' sizing here
+.logo a,
+.toggle a {
+  font-size: 26px;
+  color: $h2New;
+}
+
+// Armatus 'Logo or Name' hover
+.logo a:hover,
+.toggle a:hover {
+  color: $buttonBorderColor;
+  transition: 0.5s;
+}
+
+/* .button.secondary {
+  border-bottom: 1px #444 solid;
+} */
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle {
+  order: 1;
+}
+
+.item.button {
+  order: 2;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+  border: 0;
+}
+
+.item.active {
+  display: block;
+}
+
+/* Navbar Toggle */
+.toggle {
+  cursor: pointer;
+}
+
+.bars {
+  background: #999;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+  margin: 4px 0px 4px 8px;
+}
+
+.bars:before,
+.bars:after {
+  background: #999;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.bars:before {
+  top: 5px;
+}
+
+.bars:after {
+  top: -5px;
+}
+
+/* Tablet menu */
+@media all and (min-width: 468px) {
+  .menu {
+    justify-content: center;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+    // color: #450609;
+  }
+
+  .toggle {
+    order: 2;
+  }
+
+  .button.secondary {
+    border: 0;
+    /* display: none; */
+  }
+
+  .button a {
+    padding: 7.5px 15px;
+    background: $cardColor;
+    border: 1px solid $cardColor;
+    border-radius: 12px;
+  }
+
+  .button.secondary a {
+    background: $cardColor;
+    border: 1px solid $textColor;
+    border-radius: 12px;
+  }
+
+  .button a:hover {
+    text-decoration: none;
+    transition: all 0.5s;
+    /* border-radius: 12px; */
+  }
+
+  .button:not(.secondary) a:hover {
+    color: $buttonBorderColor;
+    background: $textColor;
+    border-color: #999;
+    border-radius: 12px;
+  }
+
+  .button.secondary a:hover {
+    color: $buttonBorderColor;
+    border: 1px solid $textColor;
+    border-radius: 12px;
+
+  }
+}
+/* Desktop menu */
+@media all and (min-width: 768px) {
+  .item {
+    display: block;
+    width: auto;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .logo {
+    order: 0;
+  }
+
+  .item {
+    order: 1;
+  }
+
+  .button {
+    order: 2;
+  }
+
+  .menu li {
+    padding: 15px 10px;
+  }
+
+  .menu li.button {
+    padding-right: 0;
+  }
+}
